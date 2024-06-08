@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/nav-bar.js"></script>
+    <title>Introduction</title>
+</head>
+<body>
+
+<div class="header">
+    <!--custom shadow DOM element-->
+    <!--for reusability-->
+    <nav-bar></nav-bar>
+</div>
+<div class="center-content">
+
+    <div class="container">
+        <div class="circle-image">
+            <img src="images/avatar.jpg" alt="image">
+        </div>
+    </div>
+    <p class=second-font>Hi there!👋 I'm Li TianAi, but you can also call me Skye.</p>
+    <p class=second-font>I'm passionate about coding and aspire to become an amazing programmer one day.💪
+    <p class=second-font>Nice to meet you!🌟</p>
+</div>
+
+<div class=card-container>
+    <div id="information" class="card">
+        <h2>My Information</h2>
+        <ul>
+            <li>
+                <span class="label">Interests</span>
+                <span class="value">Photography, Playing video games</span>
+            </li>
+            <li>
+                <span class="label">Skills</span>
+                <span class="value">Java, C++, Android</span>
+            </li>
+            <li>
+                <span class="label">Education</span>
+                <span class="value">Software Engineering, Northeastern University</span>
+            </li>
+            <li>
+                <span class="label">Career Goals</span>
+                <span class="value">Software Developer, Project Manager</span>
+            </li>
+            <li>
+                <span class="label">Email</span>
+                <span class="value">skyelll991@gmail.com</span>
+            </li>
+        </ul>
+    </div>
+
+    <div id="projects" class="card">
+        <div onclick="window.location.href='./create.html'" class="add-project">
+            <span style="font-size: 24pt">+</span>
+        </div>
+        <h2>My Project</h2>
+        <ul id="project-list">
+            <!--<li class = project-li><a href="details.html">Cloud Factory (JAVA)</a></li>
+            <li class = project-li><a href="details.html">Weather Forecast (Android)</a></li>
+            <li class = project-li>Active elder (C)</li>
+            <li class = project-li>Gourmet butler (Web)</li>-->
+        </ul>
+
+    </div>
+</div>
+<script src="js/project.js"></script>
+</body>
+</html>

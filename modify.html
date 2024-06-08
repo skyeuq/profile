@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-modify.css">
+    <script src="./js/nav-bar.js"></script>
+    <title>My project</title>
+
+</head>
+<body>
+<div class="header">
+    <div style="position: absolute;top:0;left: 0;width: 100%">
+        <nav-bar></nav-bar>
+    </div>
+    <!--project name-->
+    <h1 id='project-name'></h1>
+    <!--project summary-->
+    <p contenteditable="true" style="text-align: center" id="project-summary"></p>
+</div>
+
+<div class="content">
+    <div class="text-content">
+        <h3>What are the functions?</h3>
+        <!--project functions-->
+        <textarea id="project-functions"></textarea>
+        <h3>Keywords</h3>
+        <!--project keywords-->
+        <textarea id="project-keywords">Android, weather forecast, music player, calendar, UX</textarea>
+        <!--project repo-->
+        <h3>Repository</h3>
+        <input id="project-repo" placeholder="repo url"></input>
+        <h3>Demo Video Link</h3>
+        <input id="project-video-link" placeholder="video link"></input>
+        <h3>Work Description</h3>
+        <textarea id="project-work"></textarea>
+        <button onclick="modifyProject()">Submit</button>
+    </div>
+</div>
+
+<script src="js/project.js"></script>
+</body>
+</html>

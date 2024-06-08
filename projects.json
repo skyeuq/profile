@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "project_name": "Daily Weather",
+      "summary": "Android-based weather forecasting application development with integrated music player and calendar functions",
+      "functions": [
+        "The application obtains weather data from the weather interface through HTTP protocol, and uses multi-thread technology to parse and display.",
+        "The application supports automatic positioning and manual selection of city weather forecast. Music player with play, pause, fast forward, fast back and other functions, and support local and online music playback.",
+        "The schedule function integrates the function of obtaining class schedules from the educational administration system, and supports users to manually manage schedules."
+      ],
+      "keywords": ["Android", "weather forecast", "music player", "calendar", "UX"],
+      "repo": "https://github.com/skyeuq/DailyWeather",
+      "videoLink": "daily weather.mp4",
+      "work":"The project was written in 2024. Through the joint efforts with Liu JinHe, I improved my Android development skills, mastered HTTP protocol data acquisition, JSON parsing, multi-threaded programming and other technologies, and enhanced my UI/UX design ability and software engineering literacy."
+    },
+    {
+      "project_name": "Cloud Factory",
+      "summary": "This project aims to build a cloud factory system to help plant managers remotely manage plant equipment and operations.",
+      "functions": [
+        "System administrators can remotely control equipment for efficient plant management.",
+        "Cloud factory administrators can rent or return equipment as needed to manage their own factory equipment.",
+        "The main functions include user management, product information management, equipment management, cloud factory management, etc. Each function module has realized the operation of adding, deleting, modifying and checking."
+      ],
+      "keywords": ["Cloud Factory", "management system", "Java programming", "UML Modeling", "OO"],
+      "repo": "https://github.com/skyeuq/CloudFactoryProject",
+      "videoLink": "cloud factory.mp4",
+      "work": "The project was written in 2023, and I improved my understanding and mastery of the software life cycle and enhanced my object-oriented design and programming skills by writing it completely independently. In the future, the system functions can be further improved, such as increasing the authority of dealers and introducing market research data."
+    },
+    {
+      "project_name": "Gourmet Butler",
+      "summary": "This project is a food ordering system that allows users to cook Chinese food at home following the recipes provided by the system.",
+      "functions": ["The system provides a variety of Chinese food recipes, and users can choose their favorite recipes to cook at home.",
+        "The system provides a recipe editing function, and users can edit the recipe according to their own taste.",
+        "The system provides a function to share the cooking process and results with friends."
+      ],
+      "keywords": ["Chinese food", "recipe", "cooking", "sharing", "Java programming"],
+      "repo": "https://github.com/skyeuq/GourmetButler",
+      "videoLink": "NULL",
+      "work": "The project was written in 2022. I improved my Java/Kotlin programming skills, mastered the use of basic web programming, Spring Boot framework, MySQL database, and enhanced my understanding of software engineering and software development process."
+    },
+    {
+      "project_name": "Active elder",
+      "summary": "NULL",
+      "functions": ["NULL", "NULL", "NULL"],
+      "keywords": ["NULL"],
+      "repo": "NULL",
+      "videoLink": "NULL",
+      "work": "NULL"
+    }
+  ]
+}

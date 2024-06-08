@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-create.css">
+    <script src="./js/nav-bar.js"></script>
+    <title>Submit New Project</title>
+</head>
+<body>
+<div class="drop-filter"></div>
+<div class="header">
+    <div style="position: absolute;top:0;left: 0;width: 100%">
+        <nav-bar></nav-bar>
+    </div>
+</div>
+<div class="container">
+    <h1>Submit New Project</h1>
+    <form id="project-form">
+        <div class="form-group">
+            <label for="project_name">Project Name:</label>
+            <input type="text" id="project_name" name="project_name" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="functions">Functions (comma separated):</label>
+            <textarea id="functions" name="functions" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="keywords">Keywords (comma separated):</label>
+            <textarea id="keywords" name="keywords" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="repo">Repository URL:</label>
+            <input type="url" id="repo" name="repo" required>
+        </div>
+        <div class="form-group">
+            <label for="videoLink">Video Link:</label>
+            <input type="text" id="videoLink" name="videoLink" required>
+        </div>
+        <div class="form-group">
+            <label for="work">Work Description:</label>
+            <textarea id="work" name="work" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('project-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        fetch('submit_project.php', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Project submitted successfully!');
+                    event.target.reset();
+                } else {
+                    alert('Failed to submit project.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to submit project. Error logged in console.');
+            });
+    });
+</script>
+</body>
+</html>
